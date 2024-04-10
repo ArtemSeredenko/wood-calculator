@@ -19,5 +19,7 @@ function calculateFunction(e) {
 
   let totalPrice = volumeInCubicMeters * quantityValue * price;
 
-  totalResult.textContent = `Общая стоимость: ${totalPrice.toFixed(2)} грн`;
+  totalResult.innerHTML = `<p>Общая стоимость: ${totalPrice.toFixed(
+    2
+  )} грн</p> <p class="cost-m3">Стоимость м<sup>3</sup>: ${price} грн</p>`;
 }
